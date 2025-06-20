@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        /* ... existing styles ... */
+        .recipe-card {
+            /* ... existing styles ... */
+            padding: 1rem;
+        }
+        .recipe-ingredients {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .recipe-ingredients li {
+            margin-bottom: 0.5rem;
+        }
+        .nutrition-badge {
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 0.8rem;
+        }
+        { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        header { background: #4caf50; padding: 1rem; color: rgb(237, 245, 246); text-align: center; /* Center-aligns text */ }
+        header * { text-align:center; margin: 0rem; /* Centers child elements horizontally */ }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { text-decoration: none; color: white; font-weight: bold; }
+        #hero { text-align: center; padding: 2rem; background: #f0f0f0; }
+        h1, h2 { margin-bottom: 1rem; }
+        .recipe-container { display: flex; flex-wrap: wrap; gap: 20px; padding: 1rem; }
+        .recipe-card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; }
+        .recipe-card:hover { transform: scale(1.05); }
+        .recipe-card img { width: 100%; height: 200px; object-fit: cover; }
+        .recipe-card h3 { padding: 0.5rem; }
+        .recipe-card p { padding: 0 0.5rem 1rem; }
+        footer { text-align: center; padding: 1rem; background: #4caf50; color: white; margin-top: 2rem; }
+    </style>
+    <title>Healthy Recipe Blog</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+            <h1>Healthy Recipes</h1>
+            <ul>
+                <li><a href="#breakfast">Breakfast</a></li>
+                <li><a href="#lunch">Lunch</a></li>
+                <li><a href="#dinner">Dinner</a></li>
+                <li><a href="helthy tips.html">Helthy tips</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Welcome to Healthy Recipe Blog</h1>
+        <p>Delicious and Nutritious Recipes for Every Meal!</p>
+    </section>
+
+    <!-- Breakfast Section -->
+    <section id="breakfast">
+        <h2>Breakfast Recipes</h2>
+        <div class="recipe-container">
+            <div class="recipe-card">
+                <img src="(https://www.indianhealthyrecipes.com/ragi-malt-ragi-java-recipe-ragi-recipes/)"e alt="Ragi Malt Recipe"/>
+                <h3>Ragi Malt Recipe</h3>
+                <p class="recipe-description">A nutritious and filling breakfast drink made with ragi flour, milk, and spices.</p>
+                <ul class="recipe-ingredients">
+                    <li>1 cup ragi flour</li>
+                    <li>2 cups milk</li>
+                    <li>1/2 teaspoon cinnamon powder</li>
+                    <li>1/4 teaspoon cardamom powder</li>
+                </ul>
+                <div class="nutrition-badge">
+                    <span>Calories: 250</span>
+                    <span>Protein: 5g</span>
+                    <span>Fiber: 2g</span>
+                </div>
+
+            <p class="recipe-benefits">Ragi malt is rich in calcium, iron, and fiber, making it an excellent option for breakfast.</p>
+        </div>
+
+        <div class="recipe-card">
+            <img src="(link unavailable)" alt="Avocado Toast" />
+            <h3>Avocado Toast</h3>
+            <p class="recipe-description">A quick and healthy breakfast loaded with fiber and nutrients.</p>
+            <ul class="recipe-ingredients">
+                <li>2 slices whole grain bread</li>
+                <li>1 ripe avocado, mashed</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <div class="nutrition-badge">
+                <span>Calories: 300</span>
+                <span>Protein: 3g</span>
+                <span>Fiber: 7g</span>
+            </div>
+            <p class="recipe-benefits">Avocado toast is rich in healthy fats, fiber, and various essential vitamins and minerals.</p>
+        </div>
+
+        <div class="recipe-card">
+            <img src="(link unavailable)" alt="Oatmeal Bowl" />
+            <h3>Oatmeal Bowl</h3>
+            <p class="recipe-description">A warm and hearty bowl of oats topped with fruits and nuts.</p>
+            <ul class="recipe-ingredients">
+                <li>1 cup rolled oats</li>
+                <li>1 cup water or milk</li>
+                <li>Top with fruits and nuts</li>
+            </ul>
+            <div class="nutrition-badge">
+                <span>Calories: 250</span>
+                <span>Protein: 5g</span>
+                <span>Fiber: 4g</span>
+            </div>
+            <p class="recipe-benefits">Oatmeal is rich in fiber, helping to lower cholesterol and control blood sugar.</p>
+        </div>
+
+        <div class="recipe-card">
+            <img src="(link unavailable)" alt="Vegetable Salad" />
+            <h3>Vegetable Salad</h3>
+            <p class="recipe-description">A fresh and healthy salad made with mixed vegetables and a light vinaigrette.</p>
+            <ul class="recipe-ingredients">
+                <li>2 cups mixed vegetables (e.g., cherry tomatoes, cucumber, carrots)</li>
+                <li>2 tablespoons olive oil</li>
+                <li>1 tablespoon lemon juice</li>
+            </ul>
+            <div class="nutrition-badge">
+                <span>Calories: 100</span>
+                <span>Protein: 2g</span>
+                <span>Fiber: 3g</span>
+            </div>
+            <p class="recipe-benefits">Vegetable salad is low in calories and rich in vitamins, minerals, and antioxidants.</p>
+        </div>
+
+        <div class="recipe-card">
+            <img src="(link unavailable)" alt="Chia Pudding" />
+            <h3>Chia Pudding</h3>
+            <p class="recipe-description">A healthy and filling breakfast made with chia seeds soaked in milk.</p>
+            <ul class="recipe-ingredients">
+                <li>1/2 cup chia seeds</li>
+                <li>1 cup milk</li>
+                <li>1 tablespoon honey</li>
+            </ul>
+            <div class="nutrition-badge">
+                <span>Calories: 150</span>
+                <span>Protein: 2g</span>
+                <span>Fiber: 4g</span>
+            </div>
+            <p class="recipe-benefits">Chia pudding is rich in fiber, protein, and omega-3 fatty acids.</p>
+        </div>
+
+
+
+    <div class="recipe-card">
+        <img src="(link unavailable)" alt="Spinach and Feta Omelet"/>
+        <h3>Spinach and Feta Omelet</h3>
+        <p class="recipe-description">A fluffy and flavorful omelet made with spinach, feta cheese, and eggs.</p>
+        <ul class="recipe-ingredients">
+            <li>2 eggs</li>
+            <li>1/4 cup chopped fresh spinach</li>
+            <li>1/4 cup crumbled feta cheese</li>
+        </ul>
+        <div class="nutrition-badge">
+            <span>Calories: 200</span>
+            <span>Protein: 18g</span>
+            <span>Fiber: 2g</span>
+        </div>
+        <p class="recipe-benefits">Spinach and feta omelet is rich in protein, vitamins, and minerals.</p>
+    </div>
+
+    <div class="recipe-card">
+        <img src="(link unavailable)" alt="Poha"/>
+        <h3>Poha</h3>
+        <p class="recipe-description">A popular Indian breakfast dish made with flattened rice, onions, and spices.</p>
+        <ul class="recipe-ingredients">
+            <li>1 cup flattened rice</li>
+            <li>1/2 cup chopped onion</li>
+            <li>1/4 teaspoon turmeric powder</li>
+        </ul>
+        <div class="nutrition-badge">
+            <span>Calories: 150</span>
+            <span>Protein: 2g</span>
+            <span>Fiber: 2g</span>
+        </div>
+        <p class="recipe-benefits">Poha is a good source of carbohydrates, fiber, and iron.</p>
+    </div>
+
+    <div class="recipe-card">
+        <img src="(link unavailable)" alt="Ragi Dosa"/>
+        <h3>Ragi Dosa</h3>
+        <p class="recipe-description">A nutritious and delicious South Indian breakfast made with ragi flour, rice, and lentils.</p>
+        <ul class="recipe-ingredients">
+            <li>1 cup ragi flour</li>
+            <li>1 cup rice</li>
+            <li>1/2 cup lentils</li>
+        </ul>
+        <div class="nutrition-badge">
+            <span>Calories: 200</span>
+            <span>Protein: 5g</span>
+            <span>Fiber: 4g</span>
+        </div>
+        <p class="recipe-benefits">Ragi dosa is rich in calcium, iron, and fiber, making it an excellent option for breakfast.</p>
+    </div>
+
+    <div class="recipe-card">
+        <img src="(link unavailable)" alt="Moong Dal Chilla"/>
+        <h3>Moong Dal Chilla</h3>
+        <p class="recipe-description">A protein-rich and delicious Indian breakfast made with moong dal, onions, and spices.</p>
+        <ul class="recipe-ingredients">
+            <li>1 cup moong dal</li>
+            <li>1/2 cup chopped onion</li>
+            <li>1/4 teaspoon turmeric powder</li>
+        </ul>
+        <div class="nutrition-badge">
+            <span>Calories: 150</span>
+            <span>Protein: 10g</span>
+            <span>Fiber: 2g</span>
+        </div>
+        <p class="recipe-benefits">Moong dal chilla is a good source of protein, fiber, and iron.</p>
+    </div>
+</div>
+
+</section>
+
+<!-- Lunch Section -->
+<section id="lunch">
+<h2>Lunch Recipes</h2>
+<div class="recipe-container">
+<div class="recipe-card">
+<img src="(link unavailable)" alt="Quinoa Salad"/>
+<h3>Quinoa Salad</h3>
+<p class="recipe-description">A protein-rich salad made with quinoa, mixed vegetables, and a tangy dressing.</p>
+<ul class="recipe-ingredients">
+<li>1 cup cooked quinoa</li>
+<li>2 cups mixed vegetables (e.g., cherry tomatoes, cucumber, carrots)</li>
+<li>2 tablespoons olive oil</li>
+<li>1 tablespoon lemon juice</li>
+</ul>
+<div class="nutrition-badge">
+<span>Calories: 400</span>
+<span>Protein: 8g</span>
+<span>Fiber: 5g</span>
+</div>
+
+    <p class="recipe-benefits">Quinoa salad is rich in protein, fiber, and various essential vitamins and minerals.</p>
+</div>
+
+<div class="recipe-card">
+    <img src="(link unavailable)" alt="Lentil Soup"/>
+    <h3>Lentil Soup</h3>
+    <p class="recipe-description">A hearty and comforting soup made with lentils, vegetables, and aromatic spices.</p>
+    <ul class="recipe-ingredients">
+        <li>1 cup dried green or brown lentils</li>
+        <li>4 cups vegetable broth</li>
+        <li>1 onion, chopped</li>
+        <li>2 cloves garlic, minced</li>
+    </ul>
+    <div class="nutrition-badge">
+        <span>Calories: 250</span>
+        <span>Protein: 18g</span>
+        <span>Fiber: 10g</span>
+    </div>
+    <p class="recipe-benefits">Lentil soup is rich in protein, fiber, and various essential vitamins and minerals.</p>
+</div>
+
+<div class="recipe-card">
+    <img src="(link unavailable)" alt="Grilled Chicken Breast"/>
+    <h3>Grilled Chicken Breast</h3>
+    <p class="recipe-description">A lean and flavorful protein made by grilling chicken breast with herbs and spices.</p>
+    <ul class="recipe-ingredients">
+        <li>4 boneless, skinless chicken breasts</li>
+        <li>2 tablespoons olive oil</li>
+        <li>1 teaspoon dried thyme</li>
+        <li>1 teaspoon garlic powder</li>
+    </ul>
+    <div class="nutrition-badge">
+        <span>Calories: 140</span>
+        <span>Protein: 30g</span>
+        <span>Fiber: 0g</span>
+    </div>
+    <p class="recipe-benefits">Grilled chicken breast is a lean protein source, rich in vitamins and minerals.</p>
+</div>
+
+<div class="recipe-card">
+    <img src="(link unavailable)" alt="Roasted Vegetables"/>
+    <h3>Roasted Vegetables</h3>
+    <p class="recipe-description">A colorful and nutritious side dish made by roasting a variety of vegetables with herbs and spices.</p>
+    <ul class="recipe-ingredients">
+        <li>2 tablespoons olive oil</li>
+        <li>1 large onion, chopped</li>
+        <li>2 large bell peppers, chopped</li>
+        <li>2 large zucchinis, chopped</li>
+    </ul>
+    <div class="nutrition-badge">
+        <span>Calories: 50</span>
+        <span>Protein: 2g</span>
+        <span>Fiber: 4g</span>
+    </div>
+    <p class="recipe-benefits">Roasted vegetables are rich in vitamins, minerals, and antioxidants.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Dinner Section -->
+<section id="dinner">
+<h2>Dinner Recipes</h2>
+<div class="recipe-container">
+<div class="recipe-card">
+<img src="(link unavailable)" alt="Grilled Salmon"/>
+<h3>Grilled Salmon</h3>
+<p class="recipe-description">A flavorful and nutritious protein made by grilling salmon fillets with herbs and spices.</p>
+<ul class="recipe-ingredients">
+<li>4 salmon fillets</li>
+<li>2 tablespoons olive oil</li>
+<li>1 teaspoon dried thyme</li>
+<li>1 teaspoon lemon zest</li>
+</ul>
+<div class="nutrition-badge">
+<span>Calories: 180</span>
+<span>Protein: 35g</span>
+<span>Fiber: 0g</span>
+</div>
+<p class="recipe-benefits">Grilled salmon is rich in omega-3 fatty acids, vitamins, and minerals.</p>
+</div>
+
+<div class="recipe-card">
+<img src="(link unavailable)" alt="Quinoa and Black Bean Bowl"/>
+<h3>Quinoa and Black Bean Bowl</h3>
+<p class="recipe-description">A nutritious and filling bowl made with quinoa, black beans, roasted vegetables, and a tangy dressing.</p>
+<ul class="recipe-ingredients">
+<li>1 cup cooked quinoa</li>
+<li>1 cup cooked black beans</li>
+<li>2 cups roasted vegetables (e.g., broccoli, carrots, bell peppers)</li>
+<li>2 tablespoons olive oil</li>
+</ul>
+<div class="nutrition-badge">
+<span>Calories: 500</span>
+<span>Protein: 15g</span>
+<span>Fiber: 10g</span>
+</div>
+
+    <p class="recipe-benefits">Quinoa and black bean bowl is rich in protein, fiber, and various essential vitamins and minerals.</p>
+</div>
+
+<div class="recipe-card">
+    <img src="(link unavailable)" alt="Chicken and Vegetable Stir-Fry"/>
+    <h3>Chicken and Vegetable Stir-Fry</h3>
+    <p class="recipe-description">A quick and easy stir-fry made with chicken, mixed vegetables, and a savory sauce.</p>
+    <ul class="recipe-ingredients">
+        <li>1 pound boneless, skinless chicken breast</li>
+        <li>2 cups mixed vegetables (e.g., broccoli, carrots, bell peppers)</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>2 cloves garlic, minced</li>
+    </ul>
+    <div class="nutrition-badge">
+        <span>Calories: 300</span>
+        <span>Protein: 35g</span>
+        <span>Fiber: 4g</span>
+    </div>
+    <p class="recipe-benefits">Chicken and vegetable stir-fry is a good source of protein, vitamins, and minerals.</p>
+</div>
+
+<div class="recipe-card">
+    <img src="(link unavailable)" alt="Lentil and Vegetable Curry"/>
+    <h3>Lentil and Vegetable Curry</h3>
+    <p class="recipe-description">A flavorful and nutritious curry made with lentils, mixed vegetables, and a blend of spices.</p>
+    <ul class="recipe-ingredients">
+        <li>1 cup dried green or brown lentils</li>
+        <li>2 cups mixed vegetables (e.g., carrots, potatoes, peas)</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>1 teaspoon curry powder</li>
+    </ul>
+    <div class="nutrition-badge">
+        <span>Calories: 400</span>
+        <span>Protein: 18g</span>
+        <span>Fiber: 10g</span>
+    </div>
+    <p class="recipe-benefits">Lentil and vegetable curry is rich in protein, fiber, and various essential vitamins and minerals.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+<p>&copy; 2023 Healthy Recipe Blog. All rights reserved.</p>
+</footer>
+</body>
+</html>
